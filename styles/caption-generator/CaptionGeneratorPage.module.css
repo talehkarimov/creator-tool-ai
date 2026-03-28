@@ -1,0 +1,86 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+}
+
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.hero {
+  margin-bottom: 32px;
+}
+
+.h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.intro {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.toolSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.adWrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.seoContent {
+  margin-top: 64px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.seoSection h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+}
+
+.seoSection p {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.internalLink {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.internalLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 32px 16px 64px;
+  }
+
+  .h1 {
+    font-size: 28px;
+  }
+}

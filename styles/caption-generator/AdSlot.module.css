@@ -1,0 +1,27 @@
+.adSlot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F3F4F6;
+  border: 1px dashed var(--color-border);
+  border-radius: 4px;
+  margin: 0 auto;
+  /* Mobile default: 320×50 */
+  width: 320px;
+  height: 50px;
+}
+
+.label {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  /* Desktop: 728×90 leaderboard */
+  .adSlot {
+    width: 728px;
+    height: 90px;
+  }
+}

@@ -1,0 +1,111 @@
+.card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-secondary-text);
+}
+
+.copyButton {
+  padding: 6px 12px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-secondary-border);
+  border-radius: 6px;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-secondary-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.copyButton:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.copyButton:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.copyButtonCopied {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.bodyText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+}
+
+.hashtags {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* Skeleton shimmer */
+.skeletonCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.skeletonBar {
+  border-radius: 4px;
+  background: linear-gradient(90deg, #E5E7EB 25%, #F3F4F6 50%, #E5E7EB 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonHeader {
+  height: 16px;
+  width: 80px;
+  margin-bottom: 12px;
+}
+
+.skeletonLine {
+  height: 14px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.skeletonLineShort {
+  height: 14px;
+  width: 65%;
+  margin-bottom: 8px;
+}
+
+.skeletonHashtags {
+  height: 12px;
+  width: 50%;
+  margin-top: 4px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

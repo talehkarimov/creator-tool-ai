@@ -1,0 +1,10 @@
+# Keyword blocklist — one term per line, case-insensitive match
+# Add terms that should never be forwarded to Claude
+bomb
+explosive
+weapon
+murder
+suicide
+self-harm
+rape
+child abuse
